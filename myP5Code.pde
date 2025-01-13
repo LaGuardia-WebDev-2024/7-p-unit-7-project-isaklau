@@ -4,8 +4,9 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-var fireworkX = 20;
 
+var firework = 20
+var fireworkY = 400
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
  
@@ -17,10 +18,17 @@ draw = function(){
   }
   
   //🎯Animation Code Goes Here
-  rect(fireworkX, 15, 10, 10);
   
-  fireworkX = fireworkX + 1;
+fill (255,215,0)
+ellipse (200, fireworkY, firework, firework);
+ellipse (100,  fireworkY, firework, firework);
+fill(255,165,0)
+ellipse (250,  fireworkY, firework, firework);
+ellipse (300,  fireworkY, firework, firework);
+ellipse (150,  fireworkY, firework, firework);
 
+firework += 1
+fireworkY-=3
 }
 
 //🟡Extra FUN Features Ms. Hall Added
