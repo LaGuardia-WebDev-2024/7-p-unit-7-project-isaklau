@@ -7,6 +7,8 @@ void setup() {
 
 var firework = 20
 var fireworkY = 400
+var droneX = 20
+
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
  
@@ -27,8 +29,12 @@ ellipse (250,  fireworkY, firework, firework);
 ellipse (300,  fireworkY, firework, firework);
 ellipse (150,  fireworkY, firework, firework);
 
+fill(255,255,255);
+rect(droneX, 20, 10, 10);
+
 firework += 1
 fireworkY-=3
+droneX+=2
 }
 
 //🟡Extra FUN Features Ms. Hall Added
